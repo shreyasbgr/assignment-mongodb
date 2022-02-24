@@ -1,6 +1,6 @@
 import pymongo
 import csv
-from logger_util import custom_logger
+from src.logger_util import custom_logger
 
 class mongodb_util:
 
