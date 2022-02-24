@@ -1,0 +1,11 @@
+2022-02-25 01:15:24,549 - 	INFO - main.py - connection - 13 - Connecting to the MongoDB...
+2022-02-25 01:15:32,696 - 	INFO - main.py - connection - 20 - Connection to the MongoDB successful
+2022-02-25 01:15:32,697 - 	INFO - main.py - insert_one_record - 59 - Inserting one record into MongoDB
+2022-02-25 01:15:33,498 - 	INFO - main.py - insert_one_record - 61 - Inserted ids are:
+2022-02-25 01:15:33,498 - 	INFO - main.py - insert_one_record - 62 - 1. 6217e05c8136fd814fbb4c30
+2022-02-25 01:15:33,498 - 	INFO - main.py - insert_one_record - 67 - Insertion of one record into MongoDB successful
+2022-02-25 01:15:33,498 - 	INFO - main.py - insert_many_records - 71 - Inserting one record into MongoDB
+2022-02-25 01:15:33,574 - 	INFO - main.py - insert_many_records - 73 - Inserted ids are:
+2022-02-25 01:15:33,574 - 	INFO - main.py - insert_many_records - 75 - 0. 6217e05d8136fd814fbb4c31
+2022-02-25 01:15:33,574 - 	INFO - main.py - insert_many_records - 75 - 1. 6217e05d8136fd814fbb4c32
+2022-02-25 01:15:33,574 - 	INFO - main.py - insert_many_records - 79 - Insertion of many records into MongoDB successful
