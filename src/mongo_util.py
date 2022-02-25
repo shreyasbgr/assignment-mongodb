@@ -100,7 +100,7 @@ class mongodb_util:
     
     def insert_many_records(self,list_records):
         try:
-            self.logger.info("Inserting one record into MongoDB")
+            self.logger.info("Inserting many records into MongoDB")
             rec = self.col.insert_many(list_records)
             self.logger.info("Inserted ids are:")
             for idx, unique_ids in enumerate(rec.inserted_ids):
@@ -129,7 +129,7 @@ class mongodb_util:
         except Exception:
             self.logger.exception('Exception raised while finding record based on a query in MongoDB.')
         else:
-            self.logger.info("Finding record based on query in MongoDB successful.")
+            self.logger.info("Finding records based on query in MongoDB successful.")
 
     def find_one_record_and_update(self,id,new_data):
         try:

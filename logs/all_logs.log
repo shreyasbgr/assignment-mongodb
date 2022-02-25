@@ -1,42 +1,32 @@
-2022-02-25 17:42:14,126 - 	INFO - mongo_util.py - connection - 13 - Connecting to the MongoDB...
-2022-02-25 17:42:22,285 - 	INFO - mongo_util.py - connection - 20 - Connection to the MongoDB successful
-2022-02-25 17:42:22,285 - 	INFO - mongo_util.py - insert_one_record - 91 - Inserting one record into MongoDB
-2022-02-25 17:42:22,940 - 	INFO - mongo_util.py - insert_one_record - 93 - Inserted ids are:
-2022-02-25 17:42:22,940 - 	INFO - mongo_util.py - insert_one_record - 94 - 1. 6218c7a6a7fe1b06bbbb68b1
-2022-02-25 17:42:22,940 - 	INFO - mongo_util.py - insert_one_record - 99 - Insertion of one record into MongoDB successful
-2022-02-25 17:42:22,940 - 	INFO - mongo_util.py - insert_many_records - 103 - Inserting one record into MongoDB
-2022-02-25 17:42:23,068 - 	INFO - mongo_util.py - insert_many_records - 105 - Inserted ids are:
-2022-02-25 17:42:23,068 - 	INFO - mongo_util.py - insert_many_records - 107 - 0. 6218c7a6a7fe1b06bbbb68b2
-2022-02-25 17:42:23,068 - 	INFO - mongo_util.py - insert_many_records - 107 - 1. 6218c7a6a7fe1b06bbbb68b3
-2022-02-25 17:42:23,068 - 	INFO - mongo_util.py - insert_many_records - 111 - Insertion of many records into MongoDB successful
-2022-02-25 17:42:23,068 - 	INFO - mongo_util.py - find_one_record - 115 - Finding one record in MongoDB
-2022-02-25 17:42:23,099 - 	INFO - mongo_util.py - find_one_record - 117 - Record found: {'_id': ObjectId('6217de9e3cc05777bcb9cba7'), 'Chiral indice n': '9999', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,107 - 	INFO - mongo_util.py - find_one_record - 121 - Finding one record in MongoDB successful.
-2022-02-25 17:42:23,107 - 	INFO - mongo_util.py - update_one_record - 156 - Updating one record in MongoDB
-2022-02-25 17:42:23,138 - 	INFO - mongo_util.py - update_one_record - 161 - Updating one record in MongoDB successful.
-2022-02-25 17:42:23,138 - 	INFO - mongo_util.py - update_many_records - 165 - Updating many record in MongoDB
-2022-02-25 17:42:23,271 - 	INFO - mongo_util.py - update_many_records - 170 - Updating many records in MongoDB successful.
-2022-02-25 17:42:23,271 - 	INFO - mongo_util.py - delete_one_record - 47 - Deleting one records from the MongoDB collection
-2022-02-25 17:42:23,309 - 	INFO - mongo_util.py - delete_one_record - 54 - Deletion of one record from the MongoDB collection successful
-2022-02-25 17:42:23,309 - 	INFO - mongo_util.py - delete_many_records - 58 - Deleting many records from the MongoDB collection
-2022-02-25 17:42:23,351 - 	INFO - mongo_util.py - delete_many_records - 65 - Deletion of many records from the MongoDB collection successful
-2022-02-25 17:42:23,351 - 	INFO - mongo_util.py - find_one_record_and_update - 136 - Find and update one record in MongoDB
-2022-02-25 17:42:23,481 - 	INFO - mongo_util.py - find_one_record_and_update - 141 - Finding and updating one record in MongoDB successful.
-2022-02-25 17:42:23,481 - 	INFO - mongo_util.py - filter_records - 125 - Finding records based on query in MongoDB
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 128 - 0: {'_id': ObjectId('6217de9e3cc05777bcb9cba7'), 'Chiral indice n': '9999', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 128 - 1: {'_id': ObjectId('6217dfd2180d1d055e1711ed'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 128 - 2: {'_id': ObjectId('6217e05d8136fd814fbb4c32'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 128 - 3: {'_id': ObjectId('6218c76e2f8522425ce15431'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 128 - 4: {'_id': ObjectId('6218c7a6a7fe1b06bbbb68b2'), 'Chiral indice n': '888', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 128 - 5: {'_id': ObjectId('6218c7a6a7fe1b06bbbb68b3'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - filter_records - 132 - Finding record based on query in MongoDB successful.
-2022-02-25 17:42:23,510 - 	INFO - mongo_util.py - find_all_records - 145 - Finding all records in MongoDB
-2022-02-25 17:42:23,549 - 	INFO - mongo_util.py - find_all_records - 148 - 0: {'_id': ObjectId('6217de9e3cc05777bcb9cba7'), 'Chiral indice n': '9999', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,549 - 	INFO - mongo_util.py - find_all_records - 148 - 1: {'_id': ObjectId('6217dfd2180d1d055e1711ed'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,549 - 	INFO - mongo_util.py - find_all_records - 148 - 2: {'_id': ObjectId('6217e05d8136fd814fbb4c32'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,552 - 	INFO - mongo_util.py - find_all_records - 148 - 3: {'_id': ObjectId('6218c76e2f8522425ce15431'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,553 - 	INFO - mongo_util.py - find_all_records - 148 - 4: {'_id': ObjectId('6218c7a6a7fe1b06bbbb68b2'), 'Chiral indice n': '888', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,553 - 	INFO - mongo_util.py - find_all_records - 148 - 5: {'_id': ObjectId('6218c7a6a7fe1b06bbbb68b3'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 17:42:23,553 - 	INFO - mongo_util.py - find_all_records - 152 - Finding all records in MongoDB successful.
-2022-02-25 17:42:23,553 - 	INFO - mongo_util.py - storecsv_into_db - 24 - Storing the csv data into the DB..
-2022-02-25 17:42:25,528 - 	INFO - mongo_util.py - storecsv_into_db - 43 - Storing into the MongoDB successful
+2022-02-25 22:27:15,582 - 	INFO - mongo_util.py - connection - 13 - Connecting to the MongoDB...
+2022-02-25 22:27:23,979 - 	INFO - mongo_util.py - connection - 20 - Connection to the MongoDB successful
+2022-02-25 22:27:23,979 - 	INFO - mongo_util.py - delete_all_records - 69 - Deleting all records from the MongoDB collection
+2022-02-25 22:27:25,863 - 	INFO - mongo_util.py - delete_all_records - 76 - Deletion of all records from the MongoDB collection successful
+2022-02-25 22:27:25,863 - 	INFO - mongo_util.py - storecsv_into_db - 24 - Storing the csv data into the DB..
+2022-02-25 22:27:28,225 - 	INFO - mongo_util.py - storecsv_into_db - 43 - Storing into the MongoDB successful
+2022-02-25 22:27:28,225 - 	INFO - mongo_util.py - insert_one_record - 91 - Inserting one record into MongoDB
+2022-02-25 22:27:28,926 - 	INFO - mongo_util.py - insert_one_record - 93 - Inserted ids are:
+2022-02-25 22:27:28,926 - 	INFO - mongo_util.py - insert_one_record - 94 - 1. 62190a78a3a12b200a005a60
+2022-02-25 22:27:28,926 - 	INFO - mongo_util.py - insert_one_record - 99 - Insertion of one record into MongoDB successful
+2022-02-25 22:27:28,926 - 	INFO - mongo_util.py - insert_many_records - 103 - Inserting many records into MongoDB
+2022-02-25 22:27:28,964 - 	INFO - mongo_util.py - insert_many_records - 105 - Inserted ids are:
+2022-02-25 22:27:28,964 - 	INFO - mongo_util.py - insert_many_records - 107 - 0. 62190a78a3a12b200a005a61
+2022-02-25 22:27:28,964 - 	INFO - mongo_util.py - insert_many_records - 107 - 1. 6217de9e3cc05777bcb9cba7
+2022-02-25 22:27:28,964 - 	INFO - mongo_util.py - insert_many_records - 111 - Insertion of many records into MongoDB successful
+2022-02-25 22:27:28,964 - 	INFO - mongo_util.py - update_one_record - 156 - Updating one record in MongoDB
+2022-02-25 22:27:28,996 - 	INFO - mongo_util.py - update_one_record - 161 - Updating one record in MongoDB successful.
+2022-02-25 22:27:28,996 - 	INFO - mongo_util.py - find_one_record_and_update - 136 - Find and update one record in MongoDB
+2022-02-25 22:27:29,033 - 	INFO - mongo_util.py - find_one_record_and_update - 141 - Finding and updating one record in MongoDB successful.
+2022-02-25 22:27:29,033 - 	INFO - mongo_util.py - update_many_records - 165 - Updating many record in MongoDB
+2022-02-25 22:27:29,096 - 	INFO - mongo_util.py - update_many_records - 170 - Updating many records in MongoDB successful.
+2022-02-25 22:27:29,096 - 	INFO - mongo_util.py - delete_one_record - 47 - Deleting one records from the MongoDB collection
+2022-02-25 22:27:29,133 - 	INFO - mongo_util.py - delete_one_record - 54 - Deletion of one record from the MongoDB collection successful
+2022-02-25 22:27:29,133 - 	INFO - mongo_util.py - delete_many_records - 58 - Deleting many records from the MongoDB collection
+2022-02-25 22:27:29,177 - 	INFO - mongo_util.py - delete_many_records - 65 - Deletion of many records from the MongoDB collection successful
+2022-02-25 22:27:29,177 - 	INFO - mongo_util.py - find_one_record - 115 - Finding one record in MongoDB
+2022-02-25 22:27:29,224 - 	INFO - mongo_util.py - find_one_record - 117 - Record found: {'_id': ObjectId('62190a75a3a12b200a00309b'), 'Chiral indice n': '3', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,591598', 'Initial atomic coordinate v': '0,760361', 'Initial atomic coordinate w': '0,05909', "Calculated atomic coordinates u'": '0,59912', "Calculated atomic coordinates v'": '0,779052', "Calculated atomic coordinates w'": '0,058651'}
+2022-02-25 22:27:29,224 - 	INFO - mongo_util.py - find_one_record - 121 - Finding one record in MongoDB successful.
+2022-02-25 22:27:29,224 - 	INFO - mongo_util.py - filter_records - 125 - Finding records based on query in MongoDB
+2022-02-25 22:27:29,265 - 	INFO - mongo_util.py - filter_records - 128 - 0: {'_id': ObjectId('62190a78a3a12b200a005a60'), 'Chiral indice n': '7777777', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-25 22:27:29,265 - 	INFO - mongo_util.py - filter_records - 128 - 1: {'_id': ObjectId('6217de9e3cc05777bcb9cba7'), 'Chiral indice n': '9999', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-25 22:27:29,265 - 	INFO - mongo_util.py - filter_records - 132 - Finding records based on query in MongoDB successful.
