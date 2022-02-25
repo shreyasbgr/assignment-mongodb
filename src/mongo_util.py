@@ -43,6 +43,28 @@ class mongodb_util:
         else:
             self.logger.info("Storing into the MongoDB successful")
 
+    def delete_one_record(self,query):
+        try:
+            self.logger.info("Deleting one records from the MongoDB collection")
+            # Delete all records
+            self.col.delete_one(query)
+
+        except Exception:
+            self.logger.exception('Exception raised while deleting one record from the MongoDB collection')
+        else:
+            self.logger.info("Deletion of one record from the MongoDB collection successful")
+
+    def delete_many_records(self,query):
+        try:
+            self.logger.info("Deleting many records from the MongoDB collection")
+            # Delete all records
+            self.col.delete_many(query)
+
+        except Exception:
+            self.logger.exception('Exception raised while deleting many records from the MongoDB collection')
+        else:
+            self.logger.info("Deletion of many records from the MongoDB collection successful")
+
     def delete_all_records(self):
         try:
             self.logger.info("Deleting all records from the MongoDB collection")
@@ -53,6 +75,17 @@ class mongodb_util:
             self.logger.exception('Exception raised while deleting all records from the MongoDB collection')
         else:
             self.logger.info("Deletion of all records from the MongoDB collection successful")
+
+    def drop_collection(self):
+        try:
+            self.logger.info("Dropping the whole collection of MongoDB")
+            # Delete all records
+            self.col.drop()
+
+        except Exception:
+            self.logger.exception('Exception raised while dropping MongoDB collection')
+        else:
+            self.logger.info("Dropping MongoDB collection successful.")
 
     def insert_one_record(self,record):
         try:
@@ -88,6 +121,37 @@ class mongodb_util:
         else:
             self.logger.info("Finding one record in MongoDB successful.")
     
+    def find_record_query(self, query):
+        try:
+            self.logger.info("Finding records based on query in MongoDB")
+            all_records = self.col.find(query)
+            for idx, record in enumerate(all_records):
+                self.logger.info(f"{idx}: {record}")
+        except Exception:
+            self.logger.exception('Exception raised while finding record based on a query in MongoDB.')
+        else:
+            self.logger.info("Finding record based on query in MongoDB successful.")
+
+    def find_one_record_and_update(self,id,new_data):
+        try:
+            self.logger.info("Find and update one record in MongoDB")
+            self.col.find_one_and_update(id,new_data)
+        except Exception:
+            self.logger.exception('Exception raised while finding and updating one record from MongoDB.')
+        else:
+            self.logger.info("Finding and updating one record in MongoDB successful.")
+            
+    def find_all_records(self):
+        try:
+            self.logger.info("Finding all records in MongoDB")
+            all_records = self.col.find()
+            for idx, record in enumerate(all_records):
+                self.logger.info(f"{idx}: {record}")
+        except Exception:
+            self.logger.exception('Exception raised while finding all records in MongoDB.')
+        else:
+            self.logger.info("Finding all records in MongoDB successful.")
+
     def update_one_record(self,present_data,new_data):
         try:
             self.logger.info("Updating one record in MongoDB")
@@ -96,3 +160,12 @@ class mongodb_util:
             self.logger.exception('Exception raised while updating one record from MongoDB.')
         else:
             self.logger.info("Updating one record in MongoDB successful.")
+    
+    def update_many_records(self,present_data,new_data):
+        try:
+            self.logger.info("Updating many record in MongoDB")
+            self.col.update_many(present_data,new_data)
+        except Exception:
+            self.logger.exception('Exception raised while updating many records in MongoDB.')
+        else:
+            self.logger.info("Updating many records in MongoDB successful.")

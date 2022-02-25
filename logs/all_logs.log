@@ -1,9 +1,8 @@
-2022-02-25 13:36:26,094 - 	INFO - mongo_util.py - connection - 13 - Connecting to the MongoDB...
-2022-02-25 13:36:34,291 - 	INFO - mongo_util.py - connection - 20 - Connection to the MongoDB successful
-2022-02-25 13:36:34,291 - 	INFO - mongo_util.py - find_one_record - 83 - Finding one record in MongoDB
-2022-02-25 13:36:34,803 - 	INFO - mongo_util.py - find_one_record - 85 - Record found: {'_id': ObjectId('6217de9d3cc05777bcb9cba5'), 'Chiral indice n': '77', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
-2022-02-25 13:36:34,819 - 	INFO - mongo_util.py - find_one_record - 89 - Finding one record in MongoDB successful.
-2022-02-25 13:41:52,932 - 	INFO - mongo_util.py - connection - 13 - Connecting to the MongoDB...
-2022-02-25 13:42:01,106 - 	INFO - mongo_util.py - connection - 20 - Connection to the MongoDB successful
-2022-02-25 13:42:01,106 - 	INFO - mongo_util.py - update_one_record - 93 - Updating one record in MongoDB
-2022-02-25 13:42:01,562 - 	INFO - mongo_util.py - update_one_record - 98 - Updating one record in MongoDB successful.
+2022-02-25 15:26:17,123 - 	INFO - mongo_util.py - connection - 13 - Connecting to the MongoDB...
+2022-02-25 15:26:25,429 - 	INFO - mongo_util.py - connection - 20 - Connection to the MongoDB successful
+2022-02-25 15:26:25,429 - 	INFO - mongo_util.py - find_all_records - 146 - Finding all records in MongoDB
+2022-02-25 15:26:26,029 - 	INFO - mongo_util.py - find_all_records - 149 - 0: {'_id': ObjectId('6217de9e3cc05777bcb9cba7'), 'Chiral indice n': '9999', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-25 15:26:26,031 - 	INFO - mongo_util.py - find_all_records - 149 - 1: {'_id': ObjectId('6217dfd2180d1d055e1711ec'), 'Chiral indice n': '88', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-25 15:26:26,031 - 	INFO - mongo_util.py - find_all_records - 149 - 2: {'_id': ObjectId('6217dfd2180d1d055e1711ed'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-25 15:26:26,032 - 	INFO - mongo_util.py - find_all_records - 149 - 3: {'_id': ObjectId('6217e05d8136fd814fbb4c32'), 'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-25 15:26:26,032 - 	INFO - mongo_util.py - find_all_records - 153 - Finding all records in MongoDB successful.
