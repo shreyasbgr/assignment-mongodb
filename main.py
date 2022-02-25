@@ -23,7 +23,12 @@ if __name__ == '__main__':
                 {'Chiral indice n': '88', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'},
                 {'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
     ]
-    mongo_util_obj.insert_many_records(list_records)"""
+    mongo_util_obj.insert_many_records(list_records)
 
     # Find one record
-    mongo_util_obj.find_one_record()
+    mongo_util_obj.find_one_record()"""
+
+    # Update one record
+    present_data = {'Chiral indice n': '88'}
+    new_data = {"$set":{'Chiral indice n': '888'}}
+    mongo_util_obj.update_one_record(present_data,new_data)

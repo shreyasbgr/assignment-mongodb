@@ -87,3 +87,12 @@ class mongodb_util:
             self.logger.exception('Exception raised while finding one record from MongoDB.')
         else:
             self.logger.info("Finding one record in MongoDB successful.")
+    
+    def update_one_record(self,present_data,new_data):
+        try:
+            self.logger.info("Updating one record in MongoDB")
+            self.col.update_one(present_data,new_data)
+        except Exception:
+            self.logger.exception('Exception raised while updating one record from MongoDB.')
+        else:
+            self.logger.info("Updating one record in MongoDB successful.")
