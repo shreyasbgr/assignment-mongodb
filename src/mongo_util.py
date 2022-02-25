@@ -34,9 +34,8 @@ class mongodb_util:
                         record[headers[i]]=values[i]
                     all_records.append(record)
 
-            print(all_records[0])
             #Insert into MongoDB database
-            #col.insert_many(all_records)
+            self.col.insert_many(all_records)
         
         except Exception:
             self.logger.exception('Exception raised while storing data into MongoDB.')
@@ -121,7 +120,7 @@ class mongodb_util:
         else:
             self.logger.info("Finding one record in MongoDB successful.")
     
-    def find_record_query(self, query):
+    def filter_records(self, query):
         try:
             self.logger.info("Finding records based on query in MongoDB")
             all_records = self.col.find(query)

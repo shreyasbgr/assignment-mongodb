@@ -10,11 +10,6 @@ if __name__ == '__main__':
     logfile='logs/all_logs.log'
     mongo_util_obj = mongodb_util(connection_url,db_name,col_name,logfile)
 
-    # Insert all records from csv
-    """filepath='data/carbon_nanotubes.csv'
-    delim_csv=';'
-    mongo_util_obj.storecsv_into_db(filepath,delim_csv)
-
     # Insert one record
     record = {'Chiral indice n': '77', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
     mongo_util_obj.insert_one_record(record)
@@ -54,9 +49,14 @@ if __name__ == '__main__':
     }
     mongo_util_obj.find_one_record_and_update(id,new_data)
 
-    # Find records based on query
+    #Find records based on query
     find_query = {"Chiral indice n": {"$gt": "77"}}
-    mongo_util_obj.find_record_query(find_query)"""
+    mongo_util_obj.filter_records(find_query)
 
     # Find all records
     mongo_util_obj.find_all_records()
+
+    # Insert all records from csv
+    filepath='data/carbon_nanotubes.csv'
+    delim_csv=';'
+    mongo_util_obj.storecsv_into_db(filepath,delim_csv)
