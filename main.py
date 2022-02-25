@@ -78,6 +78,16 @@ class mongodb_util:
         else:
             self.logger.info("Insertion of many records into MongoDB successful")
 
+    def find_one_record(self):
+        try:
+            self.logger.info("Finding one record in MongoDB")
+            record = self.col.find_one()
+            self.logger.info(f"Record found: {record}")
+        except Exception:
+            self.logger.exception('Exception raised while finding one record from MongoDB.')
+        else:
+            self.logger.info("Finding one record in MongoDB successful.")
+
 if __name__ == '__main__':
 
     # Create the MongoDB util object
@@ -90,7 +100,7 @@ if __name__ == '__main__':
     # Insert all records from csv
     """filepath='data/carbon_nanotubes.csv'
     delim_csv=';'
-    mongo_util_obj.storecsv_into_db(filepath,delim_csv)"""
+    mongo_util_obj.storecsv_into_db(filepath,delim_csv)
 
     # Insert one record
     record = {'Chiral indice n': '77', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
@@ -101,4 +111,7 @@ if __name__ == '__main__':
                 {'Chiral indice n': '88', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'},
                 {'Chiral indice n': '99', 'Chiral indice m': '100', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
     ]
-    mongo_util_obj.insert_many_records(list_records)
+    mongo_util_obj.insert_many_records(list_records)"""
+
+    # Find one record
+    mongo_util_obj.find_one_record()
